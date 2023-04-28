@@ -1,0 +1,24 @@
+.Acerca{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    position: absolute;
+    margin-top: -60px;
+}
+.Acerca img{
+    width: 450px;
+    height: 650px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px grey;
+    margin-left: 150px;
+     
+}
+.Acerca h2{
+width: 850px;
+margin-right:55px;
+text-align: left;
+font-family: 'Raleway', sans-serif;
+font-weight: 100;
+margin-left: 80px;
+}

@@ -1,0 +1,317 @@
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+  }
+
+.container-0{
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding:20px;
+  background-color: #c7c7c7b7;
+  position: fixed;
+  width: 100%;
+  z-index: 997;
+  margin-top: -190px;
+}
+
+
+.logo a {
+  color: #333;
+  margin-left: 15rem;
+}
+
+.oxygen{
+  width: 100px;
+  height: 70px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  }
+  
+.menu {
+  display: flex;
+  justify-content: center;
+ margin-right: 5rem;
+}
+
+.menu li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+
+.menu li a ,.menu li p {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  transition: all .2s ease;
+}
+.menu li p{
+  margin-top: 1px;
+}
+
+.menu li a:hover {
+  border-bottom: 1.6px solid goldenrod;
+  transition: all .2s ease;
+  
+}
+
+select {
+  margin-left: 5px;
+  position: absolute;
+  margin-top: -15px;
+  border: 0px;
+  width: 15px;
+  background-color: transparent;
+  
+}
+select option a {
+  text-decoration: none;
+  color: #ed2020;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  transition: all .2s ease;
+}
+option {
+  font-family: sans-serif;
+  color:white;
+  background-color: grey;
+}
+/* Menu movil*/
+
+.menuH{
+  margin-left: -9rem;
+  transition: all .4s ease;
+  position: fixed;
+}
+
+
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 760px;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.carousel img.active {
+  opacity: 1;
+}
+
+
+
+
+
+/*  Btn */
+.btn-R{
+  color: rgb(5, 5, 5);
+  opacity: 0.4;
+  position: absolute;
+  right: 0;  
+  bottom: 40.5%;
+  font-size: 70px;
+  margin-right: 2%;
+  transition: all .2s ease;
+}
+.btn-L{
+  color: rgb(5, 5, 5);
+  opacity: 0.4;
+  position: absolute;
+  top: 49%;
+  margin-left: 2%;
+  font-size: 70px;
+  transition: all .2s ease;
+}
+
+.btn-R:hover,.btn-L:hover{
+  opacity: 1;
+  color: rgb(116, 85, 6);
+  cursor: pointer;
+  transition: all .2s ease;
+  }
+  
+  .hrContainer{
+   margin-top: 780px;
+   position: absolute;
+  }
+  .img-hr{
+    width: 50px;
+    height: 40px;
+  }
+  
+  /* WPP */
+  .wpp{
+    margin: 350px;
+    z-index: 998;
+    margin-left: 95%;
+    }
+  .wpp:hover{
+    color: green;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  /*
+  .servicios
+   ver que lo mas seguro es que debo de colocar el enlace a otra ruta de la card en un elemnto nuevo , ver que hacer 
+  
+  */
+  
+  .info-serv{
+    text-decoration: none;
+    color: white;
+    margin-left: 90px;
+    font-size: large;
+  }
+  .info-serv:hover{
+    border-bottom: 2px solid rgb(151, 132, 38);
+  }
+  
+  
+  
+  
+  
+  
+  
+
+@media screen and (max-width: 700px) {
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu li {
+    margin: 20px 0;
+  }
+
+  .menu li a {
+    font-size: 20px;
+  }
+
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  
+ 
+
+.header{
+  position: fixed;
+}
+
+/* Menu movile*/
+.menuH{
+    background-color: rgb(216, 216, 216);
+    width: 110px;
+    height: 35vh;
+    position: relative;
+    margin-top:-105px;
+    display: flex;
+    flex-direction: column;
+    padding: 1pc;
+    position: absolute;
+    z-index: 999;
+    }
+    .menuH  a{
+        z-index: 998;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .menuH  a:hover{
+        color: white;
+        border-bottom: 1.5px solid goldenrod;
+    }
+    
+    .navbar {
+      width: 90%;
+      margin-top: -190px;
+    }
+    img{ 
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;}
+    
+/* btn movil*/
+
+  
+  .btn-L{
+    z-index: 998;
+    margin-top:38px;
+    opacity: 1;
+    color: rgb(183, 133, 6);
+  }
+  .btn-R{
+    color: rgb(183, 133, 6);
+    position: sticky;
+    opacity: 1;
+    z-index: 999;
+    margin-left:1395%;
+    margin-top: 120px;
+    
+  }
+  
+  .oxygen{
+  margin-top: -5px;
+  margin-left: -50px;
+  width: 50px;
+  height: 50px;
+  }
+
+    /* Estilo para las img y btn del header */
+    
+    .carousel img {
+      width: 450px;
+      height: 150px;
+    }
+
+    .hrContainer{
+      margin-top: 180px;
+    }
+      
+  .hrContainer img{
+    width: 10px;
+    height: 10px;
+  }
+  
+  select{
+    margin-top: 140px;
+    margin-left: 60px;
+  }
+}
+
+
+  

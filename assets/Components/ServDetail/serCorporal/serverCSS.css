@@ -1,0 +1,353 @@
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+  }
+
+.container-0{
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding:20px;
+  background-color: #1010108c;
+  position: fixed;
+  width: 100%;
+  z-index: 997;
+}
+
+
+.logo a {
+  color: #33333387;
+  margin-left: 15rem;
+}
+
+.oxygen{
+  width: 100px;
+  height: 70px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #e9e3e3;
+  }
+  
+.menu {
+  display: flex;
+  justify-content: center;
+ margin-right: 5rem;
+}
+
+.menu li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+
+.menu li a ,.menu li p {
+  text-decoration: none;
+  color: #fbfbfb;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  transition: all .2s ease;
+}
+.menu li p{
+  margin-top: 1px;
+}
+
+.menu li a:hover {
+  border-bottom: 1.6px solid goldenrod;
+  transition: all .2s ease;
+  
+}
+
+select {
+  margin-left: 5px;
+  position: absolute;
+  margin-top: -15px;
+  border: 0px;
+  width: 15px;
+  background-color: transparent;
+  color: white;
+}
+select option a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  transition: all .2s ease;
+}
+option {
+  font-family: sans-serif;
+  color:white;
+  background-color: grey;
+}
+
+/*   */
+
+.containerDivCard{
+    
+    margin-top: 0px;
+}
+.containerDivCard img{
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 2px 10px rgb(63, 64, 63);
+}
+.hrInfoServ{
+    color: #1010108c;
+    border: solid 1px ;
+    width: 50%;
+}
+
+
+/* description */
+
+.description{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.servTitel{
+    text-align: center;
+    font-family: 'Raleway', sans-serif; 
+    font-size: xx-large;
+    font-weight: 150;
+    color: rgb(195, 177, 35);
+}
+
+.description img{
+    width: 700px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tratamiento{
+    width: 360px;
+    margin-left: 100px;
+    font-size: larger;
+}
+
+.tratamiento p{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 18px;
+}
+
+.hr2{
+    border: solid 1px rgb(195, 177, 35);
+    width: 60%;
+  }
+  
+  
+  /* Ser Destacos */
+    .destacados{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+    .titel{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .destacados h3{
+      font-family: 'Raleway', sans-serif;
+      color: rgb(195, 177, 35);
+      font-size: x-large;
+    }
+    span{
+      font-family: 'Raleway', sans-serif;
+      color: rgb(195, 177, 35);
+      font-weight: 500;
+    }
+    
+    .serDestacados{
+      margin-top: 50px;
+      width: 90%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      box-shadow: 0px 0px 10px rgb(180, 163, 163);
+      border-radius: 2px;
+    }
+    .serDestacados img{
+      margin-top: 10px;
+      width:420px;
+      height: 400px;
+      opacity: .9;
+      transition: all .3s ease;
+      border-radius: 2px;
+    }
+    .serDestacados img:hover{
+      opacity: 1;
+      transition: all .3s ease;
+    }
+    
+    .serDestacados p{
+      color: white;
+      text-align: center;
+      background-color: rgba(195, 176, 35, 0.731);
+      width: 50%;
+    }
+    .cardDes{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+
+
+
+
+/* Menu movil*/
+
+.menuH{
+  margin-left: -9rem;
+  transition: all .4s ease;
+  position: fixed;
+}
+
+  
+
+@media screen and (max-width: 700px) {
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu li {
+    margin: 20px 0;
+  }
+
+  .menu li a {
+    font-size: 20px;
+  }
+
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  
+ 
+
+.header{
+  position: fixed;
+}
+
+/* Menu movile*/
+.menuH{
+    background-color: rgb(216, 216, 216);
+    width: 110px;
+    height: 35vh;
+    position: relative;
+    margin-top:-105px;
+    display: flex;
+    flex-direction: column;
+    padding: 1pc;
+    position: absolute;
+    z-index: 999;
+    }
+    .menuH  a{
+        z-index: 998;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .menuH  a:hover{
+        color: white;
+        border-bottom: 1.5px solid goldenrod;
+    }
+    
+    .navbar {
+      width: 90%;
+      margin-top: -190px;
+    }
+    img{ 
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;}
+    
+/* btn movil*/
+
+  
+  .btn-L{
+    z-index: 998;
+    margin-top:38px;
+    opacity: 1;
+    color: rgb(183, 133, 6);
+  }
+  .btn-R{
+    color: rgb(183, 133, 6);
+    position: sticky;
+    opacity: 1;
+    z-index: 999;
+    margin-left:1395%;
+    margin-top: 120px;
+    
+  }
+  
+  .oxygen{
+  margin-top: -5px;
+  margin-left: -50px;
+  width: 50px;
+  height: 50px;
+  }
+
+    /* Estilo para las img y btn del header */
+    
+    .carousel img {
+      width: 450px;
+      height: 150px;
+    }
+
+    .hrContainer{
+      margin-top: 180px;
+    }
+      
+  .hrContainer img{
+    width: 10px;
+    height: 10px;
+  }
+  
+  select{
+    margin-top: 140px;
+    margin-left: 60px;
+  }
+}
+
+
+  
+
+
+

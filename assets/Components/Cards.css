@@ -1,0 +1,109 @@
+
+
+
+.containerDivCard{
+  margin-top: 190px;
+}
+
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(450px,1fr) /*acomodo de card con resposive*/
+    );
+    /*border:solid red 2px;*/
+    margin-left: 10rem;
+  }
+
+/* Ver como poder colocar las card correctamente*/
+
+  
+  .card1 img {
+    width: 150px;
+    height: auto;
+    display: block;
+  }
+  
+  .card1-content {
+    display: flex;
+  }
+  
+  .image-details {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .image-details h2 {
+    margin-top: 0;
+  }
+  
+  .image-details p {
+    margin-bottom: 20px;
+  }
+  
+  .image-details ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-details li {
+    margin-bottom: 10px;
+  }
+  
+
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 100%;/*acomodo de card con resposive*/
+    border: solid 2px rgb(151, 132, 38);
+    margin-bottom: 20px;
+    height: 700px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .card-info {
+    padding: 20px;
+    background-color: rgba(151, 132, 38, 0.563);
+    height: 100%
+  }
+  
+  .card-info h2 {
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    
+  }
+  
+  .card-info p {
+    margin-bottom: 10px;
+    color: white;
+    text-align: start;
+  }
+  .card-info a{
+    text-decoration: none;
+  }
+  
+  .card-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  .hrCard{
+    color: rgb(151, 132, 38);
+    border: 01px solid rgba(151, 132, 38, 0.474) ;
+  }

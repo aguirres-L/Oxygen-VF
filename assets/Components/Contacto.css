@@ -1,0 +1,163 @@
+
+.containerDivCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.redes{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.redes a {
+    opacity: 0.7;
+ 
+}
+.redes a:hover{
+    border: none;
+    opacity: 15;
+}
+.form-oxygen{
+    --form-ok-color:#06f80e9f;
+    --form-error-color:rgba(129, 116, 17, 0.56);
+    width: 80%;
+    padding: 40px;
+    border: solid 0.1px rgba(42, 41, 41, 0.067);
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 2px;
+    height: 500px;
+}
+
+.form-oxygen >*{  /* con la boca de pescado hago referencia a todos los hijo que pueda llegar a tener esta class  */
+padding: 0.5rem; /* al colocarles un padding, la letra interna  de los input no estara tan pegada al input en si   */
+margin: 1rem auto;  /* le doy un maring de un 1rem y auto*/
+display: block;  /* le indico que se ejecute en forma de block osea que los input se posicionan uno encima del otro como una lista */
+width: 100%;    /* le indico que el ancho va a ser de 100% */
+
+
+}
+
+/* El texAera presenta una anomalia que su contenedor se puede aploar o disminuir con respecto a lad medidad 
+que se le da al . Para quitar esa function de texArea es necesario untilizar un metdo */
+.form-oxygen textarea{
+    resize: none;   /* con resize , el contenedor de comentario no podra ser modifcado pro el user */
+}
+
+
+/* Estilo para el titulo del form y para el mensjae de envio */
+
+.form-oxygen legend,
+.form-oxygen-concat{
+    font-size: 1.5rem; /* le doy un font-size */
+    font-weight: bold;  /* coloco las letras en negritas */
+    text-align: center; /* alineo el texto de forma central */
+} 
+.form-oxygen legend{
+    font-family: 'Raleway', sans-serif;
+}
+.form-oxygen-concat p{
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+/* La letra de los input no es la misma que la de los TexArea , es necesario colocarles el mismo tipo de texto*/
+
+.form-oxygen input,
+.form-oxygen textarea{
+    font-size: 1rem;
+    font-family: sans-serif ;       /* Le coloc una tipografia de letra para todos los elementos del form */
+}
+
+/*  tamvoen se debe modificar la tipografia del btn enviar, ya que no es bien visto que tengan la misma tipografia */
+/*hago refernecia a todos los elemtnos que sena input y tengan el type submit */
+.form-oxygen input[type="submit"]{
+    color: rgb(247, 239, 239);
+    font-family: 'Raleway', sans-serif;
+    
+    
+    background-color: rgba(129, 116, 17, 0.56);
+    width: 20%;
+    border-radius: 5px;
+    border: solid 2px rgb(255, 255, 255);
+    transition: all .3s ease;
+    font-weight: bold;
+    cursor: pointer;    /* al momento de posicionar el cursor en el btn , el cursor cambiara su forma */
+}                       /* pasara de flecha a manita que señala */
+
+.form-oxygen input[type="submit"]:hover{
+    color: white;
+    background-color: rgba(17, 155, 205, 0.881);
+    transition: all .3s ease;
+    
+}
+
+
+/* Le doy color a todos los textos que esten dentro de los input */
+.form-oxygen  *::placeholder{ /* (*::placeholder , con esto indico que el color de aplicque a todos los elemtnos que esten en from o form-oxygen y que se les coloque un color en particular */
+    color: var(--second-color)
+}
+
+/*  validaciones sobre los colores a la hora de colocar la info sobre los input, osea se ponen verde o rojos */
+
+
+.form-oxygen [required]:valid{  /* con requier hago referncia a todos los input con requiere , y con la seudo clase valid, indico que a todo los requeries que sean true me las pontara de verda */
+    border: thin solid var(--form-ok-color);
+    background-color: white;
+}
+.form-oxygen [required]:invalid{ /* y por otro lado con invalid, hago referencia a todos los input que no se pudieron prosesar osae false */
+border: thin solid var(--form-error-color);
+}
+
+
+/*      Si no cumple con los requisitos de los input se debe mostrar un nuevo mensaje debajo de cada input */
+
+.form-oxygen-error{ /* style para los futuros carteles de error*/
+    margin-top: -1rem;
+    font-size: 80%;
+    color: #fff;
+    background-color: var(--form-error-color);
+    transition: all 800ms ease;
+    font-size: 1rem;
+}
+.form-oxygen-error.is-active{
+    display: block;
+    animation: show-message 1s 1  normal 0s ease-out both;
+}
+.none{
+    display: none;
+}
+
+/* coloco una animacion para que se vea con un estilo determinado a la hora de aprecer */
+
+@keyframes show-message{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.form-oxygen-espera{
+    text-align: center;
+}
+
+.form-map{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 1300px;
+}
+iframe{
+   box-shadow: 0px 0px 10px rgba(85, 84, 83, 0.897);
+   border-radius: 2px;
+}
